@@ -20,7 +20,6 @@ const run = async () => {
         const database = client.db("theValley");
         const touristCollection = database.collection("tourist");
         const userCollection = database.collection("user");
-        console.log('connected')
 
         // get api
         app.get('/card', async (req, res) => {
